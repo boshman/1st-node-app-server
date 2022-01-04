@@ -1,5 +1,5 @@
 
-console.log('hello')
+// console.log('hello')
 const express = require('express')
 const bodyParser = require('body-parser') // parse json
 const cors = require('cors') // allows any client to hit the server -- not secure
@@ -13,6 +13,12 @@ app.use(cors())
 app.post('/register', (req, res) => {
   res.send({
     message: `Hello ${req.body.email} Your user was registerd.`
+  })
+})
+
+app.get('/', (req, res) => {
+  res.send({
+    message: `Hello world`
   })
 })
 
