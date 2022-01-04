@@ -18,7 +18,7 @@ app.post('/register', (req, res) => {
 
 app.get('/', (req, res) => {
   res.send({
-    message: `Hello world`
+    message: `Hello world!`
   })
 })
 
